@@ -1,0 +1,1874 @@
+/* prefixed by https://autoprefixer.github.io (PostCSS: v7.0.26, autoprefixer: v9.7.3) */
+
+/*------------------------------------------------------------------------*/
+/*Google Fonts CSS Starts*/
+/*------------------------------------------------------------------------*/
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap');
+
+/*------------------------------------------------------------------------*/
+/*Google Fonts CSS Ends*/
+/*------------------------------------------------------------------------*/
+
+
+/*------------------------------------------------------------------------*/
+/*Universal CSS Starts*/
+/*------------------------------------------------------------------------*/
+
+* {
+	margin: 0;
+	padding: 0;
+}
+h1,h2,h3,h4,h5,h6,p,a {
+	margin: 0;
+	padding: 0;
+	font-family: 'Open Sans', sans-serif;
+	letter-spacing: 1px;
+	
+}
+ul,li,ol {
+	list-style: none;
+}
+a {
+	text-decoration: none;
+	color: #fff;
+}
+a:hover {
+	text-decoration: none;
+	color: #fff
+}
+html {
+	scroll-behavior: smooth;
+	overflow-x: hidden;
+}
+body {
+	position: relative;
+	width: 100%;
+	height: 100%;
+}
+body::-webkit-scrollbar {
+	width: 12px;
+}
+body::-webkit-scrollbar-track {
+	-webkit-box-shadow: inset 0 0 4px rgba(0,0,0,.5);
+	        box-shadow: inset 0 0 4px rgba(0,0,0,.5);
+	border-radius: 25px;
+}
+body::-webkit-scrollbar-thumb {
+	background: #1aa3d0;
+	border-radius: 25px;
+}
+
+button:focus{
+	outline: 0px dotted;
+    outline: 0px auto -webkit-focus-ring-color;
+}
+
+/*------------------------------------------------------------------------*/
+/*Universal CSS Ends*/
+/*------------------------------------------------------------------------*/
+
+/*------------------------------------------------------------------------*/
+/*Preloader CSS Starts */
+/*------------------------------------------------------------------------*/
+.dot {
+    position: relative;
+    top: 50%;
+    left: 45%;
+}
+.preloader {
+	position: fixed;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: start;
+	    -ms-flex-pack: start;
+	        justify-content: flex-start;
+	height: 100vh;
+	width: 100vw;
+	background: #fff;
+	z-index: 999;
+	/*display: none;*/
+}
+.preloader .dot {
+	height: 20px;
+	width: 20px;
+	border-radius: 50%;
+	background: #1aa3d0;
+	margin: 5px;
+	-webkit-animation: bouncing .7s infinite alternate;
+	        animation: bouncing .7s infinite alternate;
+}
+.preloader .dot:nth-child(2) {
+	 -webkit-animation-delay: .1s;
+	         animation-delay: .1s;
+}
+.preloader .dot:nth-child(3) {
+	 -webkit-animation-delay: .2s;
+	         animation-delay: .2s;
+}
+@-webkit-keyframes bouncing {
+	to{
+		opacity: .3;
+		-webkit-transform: translate3d(0 , -20px , 0);
+		        transform: translate3d(0 , -20px , 0);
+
+	}
+
+}
+@keyframes bouncing {
+	to{
+		opacity: .3;
+		-webkit-transform: translate3d(0 , -20px , 0);
+		        transform: translate3d(0 , -20px , 0);
+
+	}
+
+}
+.load-finish {
+  opacity: 0;
+  pointer-events: none;
+}
+main {
+	position: relative;;
+}
+
+/*------------------------------------------------------------------------
+/*Preloader CSS Ends  */
+/*------------------------------------------------------------------------*/
+
+/*------------------------------------------------------------------------*/
+/*Header CSS Starts  #1D87B9 */
+/*------------------------------------------------------------------------*/
+.top_header {
+	background-image: -webkit-gradient(linear, left top, right top, from(#61D0E0) , to(#1D87B9));
+	background-image: -o-linear-gradient(left, #61D0E0 , #1D87B9);
+	background-image: linear-gradient(to right, #61D0E0 , #1D87B9);
+}
+
+.top_header .social_logo {
+	margin-top: 15px;
+}
+.top_header .social_logo ul {
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+}
+.top_header .social_logo ul li a{
+	color: #fff;
+	margin-left: 15px;
+	font-size: 18px;
+}
+.top_header .top_header_left {
+	margin-top: 15px;
+}
+.top_header .top_header_left .address {
+	margin-right: 20px;
+}
+.top_header .top_header_left .address a {
+	color: #fff;
+	letter-spacing: 1px;
+	font-weight: 600;
+}
+.top_header .top_header_left .phone a {
+	color: #fff;
+	letter-spacing: 1px;
+	font-weight: 600;
+}
+.top_header .top_header_left .phone {
+	margin-right: 10px;
+	margin-left: 10px;
+}
+.top_header .top_header_left .email {
+	margin-left: 20px;
+}
+.top_header .top_header_left .email a,i {
+	color: #fff;
+	letter-spacing: 1px;
+	font-weight: 600;
+}
+.header_main {
+	position: relative;
+	/*position: absolute;*/
+	/*background-image: linear-gradient(to right, #1D87B9 , #61D0E0);*/
+	/*background: #DBDDE0;*/
+	background: rgba(28, 114, 160, .2);
+}
+.navfixed {
+    position: fixed !important;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 0 !important;
+    background: #D2E3EC !important;
+    -webkit-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.40);
+            box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.40);
+    -webkit-transition: all linear 0.5s;
+    -o-transition: all linear 0.5s;
+    transition: all linear 0.5s;
+    z-index: 99999;
+}
+.navbar-expand-lg .navbar-nav .nav-link {
+	padding: 0px;
+	padding-left: 35px;
+	color: #000;
+	font-weight: 600;
+	position: relative;
+}
+.navbar-expand-lg .navbar-nav .nav-link:hover {
+	color: #36A2C7;
+}
+.navbar-expand-lg .navbar-nav .nav-link:after {
+	content: '';
+	height: 2px;
+	width: 0%;
+	background: #36A2C7;
+	position: absolute;
+	top: 22px;
+	left: 36px;
+	opacity: 0;
+	-webkit-transition: all linear.3s;
+	-o-transition: all linear.3s;
+	transition: all linear.3s;
+}
+.navbar-expand-lg .navbar-nav .nav-link:hover::after {
+	opacity: 1;
+	width: 50%;
+
+}
+.navbar {
+	padding: 0px;
+}
+.top-to {
+	height: 50px;
+	width: 50px;
+	background: #000;
+	position: absolute;
+	bottom: 10%;
+	right: 10%;
+}
+
+
+
+/*------------------------------------------------------------------------*/
+/*Header CSS Ends*/
+/*------------------------------------------------------------------------*/
+
+/*------------------------------------------------------------------------*/
+/*Banner CSS Starts*/
+/*------------------------------------------------------------------------*/
+.banner {
+	background: url(../img/24220-[Converted].jpg) no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+.banner_overlay {
+	/*height: 100vh;*/
+	padding: 150px 0px 200px 0px;
+	/*background: rgba(40, 145, 145, .6);*/
+	background: rgba(29, 135, 185, .8);
+}
+.banner_content p {
+	background: rgba(43, 150, 193, .4);
+	display: inline-block;
+	padding: 10px 20px;
+	border-radius: 3px;
+	color: #e5e5e5;
+}
+.banner_content h1 {
+	font-size: 36px;
+	font-weight: 700;
+	letter-spacing: 1px;
+	padding-top: 20px;
+	color: #e5e5e5;
+}
+.banner_content h3 { 
+	font-size: 26px;
+	font-weight: 600;
+	letter-spacing: 1px;
+	color: #e5e5e5;
+}
+.banner_content h6{
+	margin-right: 50%;
+	font-size: 16px;
+	letter-spacing: 1px;
+	padding-top: 5px;
+	padding-bottom: 20px;
+	color: #e5e5e5;
+}
+.banner_content button{
+	background: #f95a5b;
+	height: 50px;
+	width: 180px;
+	/*border-radius: 20px;*/
+	/*margin-left: 15px;*/
+	color: #fff;
+	text-align: center;
+	font-weight: 600;
+	border: none;
+	-webkit-transition: .3s;
+	-o-transition: .3s;
+	transition: .3s;
+	border-radius: 3px;
+}
+.banner_content button:hover {
+	background: none;
+	border: 2px solid #f95a5b;
+}
+
+
+
+/*------------------------------------------------------------------------*/
+/*Banner CSS Ends*/
+/*------------------------------------------------------------------------*/
+
+
+
+/*------------------------------------------------------------------------*/
+/*blog_Banner CSS Starts*/
+/*------------------------------------------------------------------------*/
+
+.blog_Banner {
+	background: url(../img/blog_bg.jpg) no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+	background-position: center; 
+}
+.blog_overlay {
+	padding: 50px 0px 50px;
+	background: rgba(29, 135, 185, .6);
+}
+
+.blog_page h3{
+	font-size: 42px;
+	font-weight: 600;
+	padding-bottom: 5px;
+	color: #fff;
+}
+.blog_page ul{
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+}
+.blog_page ul li a{
+	font-size: 18px;
+	font-weight: 500;
+	margin-right: 10px;
+}
+.blog_page ul li i {
+	font-size: 14px;
+	font-weight: 300;
+	margin-right: 10px;
+	margin-top: 8px;
+}
+/*------------------------------------------------------------------------*/
+/*blog_Banner CSS Ends*/
+/*------------------------------------------------------------------------*/
+
+
+/*------------------------------------------------------------------------*/
+/* blog_Banner CSS Starts*/
+/*------------------------------------------------------------------------*/
+
+.blog_main {
+	padding: 50px 0px;
+	background: #F5F6F8;
+}
+.blog_main_left {
+	margin-top: 50px;
+}
+.blog_main_left img {
+	border-radius: 15px;
+	margin-bottom: 20px;
+}
+
+.blog_main_left_con span{
+	padding: 2px 15px;
+	background: #fd583b;
+	color: #fff;
+	font-weight: 300;
+	font-size: 14px;
+	border-radius: 30px;
+}
+.blog_main_left_con h6 {
+	margin-top: 15px;
+	margin-left: 2px;
+	font-weight: 600;
+	font-size: 12px;
+}
+.blog_main_left_con h2 {
+	font-weight: 600;
+	font-size: 28px;
+	margin-top: 5px;
+	margin-bottom: 20px;
+	-webkit-transition: all linear .3s;
+	-o-transition: all linear .3s;
+	transition: all linear .3s;
+	cursor: pointer;
+}
+.blog_main_left_con p {
+	font-size: 14px;
+	padding-bottom: 10px;
+	font-weight: 500;
+	color: #93959E;
+}
+.blog_main_left_con h2:hover{
+	color: #258FBD;
+}
+.blog_main_left_con a {
+	color: #258FBD;
+}
+.blog_main_left_con i {
+	color: #258FBD;
+	margin-left: 20px;
+}
+.pagination {
+	margin-top: 50px;
+}
+.pagination .active {
+	background: #258FBD;
+}
+.pagination a {
+	color: #000;
+	padding: 5px 10px;
+	margin-right: 15px;
+	border: 1px solid #93959E;
+	background: #fff;
+}
+.pagination i {
+	font-size: 20px;
+	color: #000;
+	margin-top: 8px;
+}
+.catagories {
+	background: #fff;
+	margin-top: 40px;
+	color: #000;
+	-webkit-box-shadow: 0px 0px 25px 0px #ccc;
+	        box-shadow: 0px 0px 25px 0px #ccc;
+	border-radius: 10px;
+	padding: 20px 0px 20px;
+}
+.catagories h4 {
+	margin-left: 20px;
+	font-weight: 600;
+	font-size: 28px;
+	color: #00B4CC;
+}
+.catagories ul li {
+	margin-top: 10px;
+}
+.catagories ul li i{
+	margin-left: 20px;
+	color: #93959E;
+}
+.catagories ul li a{
+	color: #93959E;
+	padding-left: 5px;
+	font-size: 16px;
+	font-weight: 600;
+	-webkit-transition: all linear .3s;
+	-o-transition: all linear .3s;
+	transition: all linear .3s;
+}
+.catagories ul li a:hover {
+	margin-left: 5px;
+	color: #258FBD;
+}
+
+.catagories ul li span {
+	color: #93959E;
+	font-weight: 600;
+	margin-left: 50%;
+}
+.catagories ul li .virus {
+	color: #93959E;
+	font-weight: 600;
+	margin-left: 42%;
+}
+.catagories ul li .treat {
+	color: #93959E;
+	font-weight: 600;
+	margin-left: 48%;
+}
+.catagories ul li .symp {
+	color: #93959E;
+	font-weight: 600;
+	margin-left: 48.5%;
+}
+.catagories ul li a:hover span  {
+	margin-left: 5px;
+	color: #258FBD;
+	-webkit-transition: all linear .1s;
+	-o-transition: all linear .1s;
+	transition: all linear .1s;
+}
+.catagories_img {
+	margin-left: 30px;
+	margin-top: 25px;
+} 
+.catagories_img img {
+	border-radius: 5px;
+}
+.catagories_con p {
+	padding-top: 35px;
+	font-size: 12px;
+}
+.catagories_con a {
+	font-size: 18px;
+	font-weight: 600;
+	cursor: pointer;
+	-webkit-transition: all linear .3s;
+	-o-transition: all linear .3s;
+	transition: all linear .3s;
+	color: #000;
+}
+.catagories_con a:hover {
+	color: #258FBD;
+}
+.cata_tag {
+	margin-top: 20px;
+	margin-left: 20px;
+
+}
+.cata_tag a {
+	color: #000;
+	padding: 5px 10px;
+	background: #fff;
+	border: 1px solid #93959E;
+	margin-right: 10px;
+	-webkit-transition: all linear .3s;
+	-o-transition: all linear .3s;
+	transition: all linear .3s;
+}
+.cata_tag a:hover {
+	background: #258FBD;
+	color: #fff;
+}
+
+
+.search {
+  width: 100%;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 50px;
+}
+
+.searchTerm {
+  width: 100%;
+  border: 2px solid #00B4CC;
+  border-right: none;
+  padding: 5px;
+  height: 45px;
+  border-radius: 5px 0 0 5px;
+  outline: none;
+  color: #9DBFAF;
+}
+
+.searchTerm:focus{
+  color: #93959E;
+}
+
+.searchButton {
+  width: 40px;
+  height: 45px;
+  border: 1px solid #00B4CC;
+  background: #00B4CC;
+  text-align: center;
+  color: #fff;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+
+
+
+/*------------------------------------------------------------------------*/
+/* blog_Banner CSS Ends*/
+/*------------------------------------------------------------------------*/
+
+
+
+/*------------------------------------------------------------------------*/
+/*About CSS Starts*/
+/*------------------------------------------------------------------------*/
+
+.about {
+	padding: 50px 0px;
+	background: rgba(28, 114, 160, .2);
+}
+.abt_con h4 {
+	padding-top: 20px;
+	padding-bottom: 5px;
+	letter-spacing: 1px;
+	color: #36A2C7;
+	font-weight: 500;
+}
+.abt_con h3 {
+	padding-bottom: 10px;
+	letter-spacing: 1px;
+	font-weight: 600;
+}
+.abt_con p {
+	padding-top: 10px;
+	letter-spacing: 1px;
+}
+.abt_img img {
+	border-radius: 10px;	
+	/*z-index: 9999999;*/
+
+}
+.abt_img {
+	position: relative;
+	/*z-index: 99999;*/
+}
+.abt_img:after {
+    content: '';
+    position: absolute;
+    top: -15px;
+    left: -15px;
+    width: 170px;
+    height: 150px;
+    background: #61D0E0;
+    z-index: -111;
+    border-top-left-radius: 10px;
+}
+.abt_img:before {
+    content: '';
+    position: absolute;
+    bottom: -15px;
+    right: -15px;
+    width: 170px;
+    height: 150px;
+    background: #1D87B9;
+    z-index: -111;
+    border-bottom-right-radius: 10px;
+}
+
+
+
+/*------------------------------------------------------------------------*/
+/*About CSS Ends*/
+/*------------------------------------------------------------------------*/
+
+
+/*------------------------------------------------------------------------*/
+/*Symptoms CSS Starts*/
+/*------------------------------------------------------------------------*/
+
+.symptoms {
+	padding: 50px 0px 50px 0px;
+	background: #F5F6F8;
+}
+.sym_header h3 {
+	font-size: 32px;
+	padding-bottom: 50px;
+	font-weight: 600;
+	color: #218F98;
+	position: relative;
+}
+.sym_header h3:after {
+	content: '';
+	position: absolute;
+	top: 50%;
+    left: 47%;
+    height: 2px;
+    width: 100px;
+	background: #218F98;
+}
+.one_row p {
+	font-size: 26px;
+	color: #218F98;
+}
+.two_row p {
+	font-size: 26px;	
+	margin-right: 15px;
+	color: #218F98;
+}
+.three_row p {
+	font-size: 26px;
+	color: #218F98;
+}
+.four_row p {
+	font-size: 26px;
+	color: #218F98;
+}
+.five_row p {
+	/*margin-right: 20px;*/
+	font-size: 26px;
+	color: #218F98;
+}
+
+
+/*------------------------------------------------------------------------*/
+/*Symptoms CSS Ends*/
+/*------------------------------------------------------------------------*/
+
+
+/*------------------------------------------------------------------------*/
+/*Prevention CSS Starts*/
+/*------------------------------------------------------------------------*/
+
+.prevention {
+	padding: 50px 0px 50px 0px;
+	background: #F5F6F8;
+}
+.prevention .prevention_header h3 {
+	font-size: 32px;
+	padding-bottom: 50px;
+	font-weight: 600;
+	color: #218F98;
+	position: relative;
+}
+.prevention .prevention_header h3:after {
+	content: '';
+	position: absolute;
+	top: 50%;
+    left: 47%;
+    height: 2px;
+    width: 65px;
+	background: #218F98;
+}
+.do_bg {
+	background: #e5e5e5;
+	padding: 50px 30px 30px 30px; 
+	border-radius: 20px;
+	cursor: pointer;
+	border: 2px solid #218F98;
+}
+.do_bg h4 {
+	margin-bottom: 20px;
+	font-weight: 600;
+}
+.do_content {
+	padding: 10px 10px;
+	-webkit-transition: all .3s;
+	-o-transition: all .3s;
+	transition: all .3s;
+	
+}
+.do_content:hover {
+	background: #fff;
+	border-radius: 10px;
+	border-bottom: 3px solid #218F98;
+	-webkit-transform: scale(.9);
+	    -ms-transform: scale(.9);
+	        transform: scale(.9);
+}
+.do_con h5{
+	padding-top: 10px;
+	font-weight: 600;
+}
+.do_con p {
+	font-size: 14px;
+}
+.dont_con h5{
+	padding-top: 5px;
+	font-weight: 600;
+}
+.dont_con p {
+	font-size: 14px;
+}
+
+.do img {
+	-webkit-transition: all linear .2s;
+	-o-transition: all linear .2s;
+	transition: all linear .2s;
+}
+.do img:hover {
+	-webkit-transform: rotate(360deg);
+	    -ms-transform: rotate(360deg);
+	        transform: rotate(360deg);
+}
+.dont img {
+	-webkit-transition: all linear .2s;
+	-o-transition: all linear .2s;
+	transition: all linear .2s;
+}
+.dont img:hover {
+	-webkit-transform: rotate(360deg);
+	    -ms-transform: rotate(360deg);
+	        transform: rotate(360deg);
+}
+
+/*------------------------------------------------------------------------*/
+/*Prevention CSS Ends*/
+/*------------------------------------------------------------------------*/
+
+
+/*------------------------------------------------------------------------*/
+/*Treatment CSS Starts*/
+/*------------------------------------------------------------------------*/
+.treatment {
+	padding: 50px 0px 50px 0px;
+	background: #F5F6F8;
+}
+.treatment .treatment_header h3 {
+	font-size: 32px;
+	padding-bottom: 50px;
+	font-weight: 500;
+	color: #218F98;
+	position: relative;
+}
+.treatment .treatment_header h3:after {
+	content: '';
+	position: absolute;
+	top: 50%;
+    left: 46%;
+    height: 2px;
+    width: 65px;
+	background: #218F98;
+}
+.doctors {
+	position: relative;
+	overflow: hidden;
+	-webkit-transition: .3s;
+	-o-transition: .3s;
+	transition: .3s;
+	border-radius: 15px;
+}
+.doctors img {
+	border-radius: 15px;
+	overflow: hidden;
+	-webkit-transition: .3s;
+	-o-transition: .3s;
+	transition: .3s;
+}
+.doc_overlay {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 0%;
+	/*background: rgba(97, 208, 224, .5);*/
+	background: rgba(29, 135, 185, .7);
+	border-radius: 15px;
+	opacity: 1;
+	-webkit-transition: all .3s;
+	-o-transition: all .3s;
+	transition: all .3s;
+}
+.doc_overlay ul{
+	height: 100%;
+	/*position: relative;*/
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	/*margin-top: 50%;
+	transform: translateY(-50%);*/	
+	opacity: 0;
+}
+.doc_overlay ul li {
+	margin-right: 5px;
+	font-size: 18px;
+	background: #61D0E0;
+	height: 40px;
+	width: 40px;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	border-radius: 50%;
+}
+.doc_overlay ul li:hover {
+	background: #1D87B9;
+}
+.doctors:hover img{
+	-webkit-transform: scale(1.1);
+	    -ms-transform: scale(1.1);
+	        transform: scale(1.1);
+	/*transform: rotate(15deg);*/
+}
+.doctors:hover .doc_overlay {
+	opacity: 1;
+	top: 0%;
+	height: 100%;
+}
+.doctors:hover .doc_overlay ul {
+	opacity: 1;
+}
+.doc_title {
+	background: #218F98;
+	border-radius: 10px;
+	padding: 20px 0px;
+	/*width: 101%;*/
+}
+.doc_title h3{
+	color: #fff;
+}
+.doc_title h6{
+	color: #fff;
+}
+
+
+/*------------------------------------------------------------------------*/
+/*Treatment CSS Ends*/
+/*------------------------------------------------------------------------*/
+
+/*------------------------------------------------------------------------*/
+/*Blogs CSS Starts*/
+/*------------------------------------------------------------------------*/
+.blog {
+	padding: 50px 0px;
+	background: #F5F6F8;
+}
+.blog .blog_header h3 {
+	font-size: 32px;
+	padding-bottom: 50px;
+	font-weight: 500;
+	color: #218F98;
+	position: relative;
+}
+.blog .blog_header h3:after {
+	content: '';
+	position: absolute;
+	top: 50%;
+    left: 47%;
+    height: 2px;
+    width: 65px;
+	background: #218F98;
+}
+.post_img {
+	position: relative;
+	overflow: hidden;
+}
+.post_img img {
+	/*overflow: hidden;*/
+	/*transition: all linear .3s;*/
+}
+.post_img img:hover{
+	/*transform: scale(1.1);*/
+}
+.post_calender {
+	height: 60px;
+	width: 50px;
+	position: absolute;
+	top: 20px;
+	left: 20px;
+}
+.date {
+	height: 35px;
+	width: 50px;
+	background: #218F98;
+}
+.date p {
+	font-size: 24px;
+	color: #f5f5f5;
+}
+.month {
+	height: 25px;
+	width: 50px;
+	background: #1C72A0;
+}
+.month span {
+	font-size: 12px;
+	color: #f5f5f5;
+	font-family: 'Raleway', sans-serif;
+	margin-left: 14px;
+}
+.post_paragraph {
+	border: 2px solid rgba(28, 114, 160, .1);
+	border-top: none;
+	padding-left: 24px;
+	padding-bottom: 20px;
+	-webkit-transition: all linear .3s;
+	-o-transition: all linear .3s;
+	transition: all linear .3s;
+	cursor: pointer;
+}
+.post_paragraph:hover {
+	/*background: #1C72A0;*/
+	background: rgba(28, 114, 160, .7);
+}
+.post_paragraph:hover p{
+	color: #fff;
+}
+.post_paragraph:hover a{
+	color: #fff;
+}
+.post_paragraph:hover h4{
+	color: #fff;
+}
+.post_paragraph h4 {
+	font-size: 24px;
+	color: #656565;
+	font-size: 500;
+	padding: 20px 0px 10px 0px;
+
+}
+.post_paragraph p{
+	font-size: 14px;
+	color: #8c8c8c;
+	padding-bottom: 10px;
+}
+.post_paragraph a {   
+	font-size: 14px;
+	color: #c7b299;
+}
+.post_paragraph i {
+	margin-left: 15px;
+}
+
+
+/*------------------------------------------------------------------------*/
+/*Blogs CSS Ends*/
+/*------------------------------------------------------------------------*/
+
+/*------------------------------------------------------------------------*/
+/*contact CSS Starts*/
+/*------------------------------------------------------------------------*/
+.contact {
+	padding: 50px 0px 100px 0px;
+	/*background: rgba(28, 114, 160, .1);*/
+	background: rgba(33, 143, 152, .2);
+}
+.contact .contact_header h3 {
+	font-size: 32px;
+	padding-bottom: 50px;
+	font-weight: 500;
+	color: #218F98;
+	position: relative;
+}
+.contact .contact_header h3:after {
+	content: '';
+	position: absolute;
+	top: 50%;
+    left: 46%;
+    height: 2px;
+    width: 65px;
+	background: #218F98;
+}
+.card-header {
+	border-bottom: 1px solid #218F98;
+}
+.card {
+	margin-bottom: 15px;
+	/*border: 1px solid #218F98;*/
+	border-top: 1px solid #218F98;
+	border-left: 1px solid #218F98;
+	border-right: 1px solid #218F98;
+}
+.card-body {
+	border-top: transparent;
+	border-bottom: 1px solid #218F98;
+	
+	
+}
+.btn-link {
+	color: #218F98;
+	font-size: 20px;
+}
+.btn-link.focus, .btn-link:focus {
+	text-decoration: none;
+}
+.btn-link:hover {
+	text-decoration: none;
+	color: #218F98;
+}
+.form-control:focus {
+	-webkit-box-shadow: none;
+	        box-shadow: none;
+	border-color: #1D87B9;
+}
+label {
+	margin-bottom: 0px;
+}
+.btn-primary.focus, .btn-primary:focus {
+	-webkit-box-shadow: none;
+	        box-shadow: none;
+	outline: none;
+}
+.btn.focus, .btn:focus {
+	-webkit-box-shadow: none;
+	        box-shadow: none;
+	outline: none;
+}
+form {
+	background: #fff;
+    padding: 30px;
+    border-radius: 10px;
+}
+.form-control {
+	background: #f6f7f8;
+}
+.w-100 {
+	width: 100%;
+}
+
+/*------------------------------------------------------------------------*/
+/*contact CSS Ends*/
+/*------------------------------------------------------------------------*/
+
+
+/*------------------------------------------------------------------------*/
+/*footer CSS Starts*/
+/*------------------------------------------------------------------------*/
+
+.footer	{
+	padding: 50px 0px 50px 0px;
+	/*background: rgba(28, 114, 160, 1);*/
+	background: #218F98;
+	color: #fff;
+}
+.footer_logo h4{
+	/*color: #fff;*/
+	/*padding-top: 10px;*/
+	padding-bottom: 15px;
+}
+.footer_logo p{
+	/*color: #fff;*/
+
+}
+.footer_links {
+	padding-top: 68px;
+	
+}
+.footer_links h4 {
+	padding-bottom: 15px;
+}
+.footer_links ul li {
+	margin-bottom: 10px;
+}
+.footer_contact {
+	padding-top: 68px;
+}
+.footer_contact h4{
+	padding-bottom: 15px;
+}
+/*------------------------------------------------------------------------*/
+/*footer CSS Ends*/
+/*------------------------------------------------------------------------*/
+
+/*------------------------------------------------------------------------*/
+/*footer_end CSS Starts*/
+/*------------------------------------------------------------------------*/
+.footer_end {
+	margin-top: 30px;
+	padding: 15px 0px;
+	/*background: #218F98;*/
+	background: rgba(28, 114, 160, 1);
+	color: #fff;
+	font-size: 18px;
+	font-weight: 600;
+}
+.footer h4{
+	font-size: 26px;
+	font-weight: 700;
+}
+.footer_links a {
+	-webkit-transition: all linear .1s;
+	-o-transition: all linear .1s;
+	transition: all linear .1s;
+	font-weight: 600;
+	position: relative;
+}
+.footer_links a:after {
+	content: '';
+	position: absolute;
+	bottom: -8%;
+	left: 1px;
+	height: 2px;
+	width: 0%;
+	background: #206177;
+	opacity: 0;
+	-webkit-transition: all linear .3s;
+	-o-transition: all linear .3s;
+	transition: all linear .3s;
+}
+.footer_links a:hover{
+	margin-left: 10px;
+}
+.footer_links a:hover::after {
+	opacity: 1;
+	width: 33px;
+	/*left: 1px;*/
+}
+.footer_contact p{
+	font-weight: 600;
+}
+.footer_end p{
+	margin-left: 20px;
+}
+.footer_end span {
+	color: #f95a5b;
+}
+
+/*------------------------------------------------------------------------*/
+/*footer_end CSS Ends*/
+/*------------------------------------------------------------------------*/
+
+
+/*------------------------------------------------------------------------*/
+/*Responsive CSS Starts*/
+/*------------------------------------------------------------------------*/
+
+
+/*// Extra large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) {  }
+
+/*// Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) and (max-width: 1199.98px) { 
+	.top_header .top_header_left .address a {
+		font-size: 14px;
+	}
+	.top_header .top_header_left .phone a {
+		font-size: 14px;
+	}
+	.top_header .top_header_left .email a, i {
+		font-size: 14px;
+	}
+/*------------------------------------------------------------------------*/
+/*Blog Page Responsive CSS Starts*/
+/*------------------------------------------------------------------------*/
+
+.catagories ul li span {
+	margin-left: 42%;
+}
+.catagories ul li .virus {
+	margin-left: 32%;
+}
+.catagories ul li .treat {
+	margin-left: 39.3%;
+}
+.catagories ul li .symp {
+	margin-left: 39.7%;
+}
+.catagories_con p {
+	padding-top: 26px;
+}
+.cata_tag a {
+	padding: 5px 5px;
+	font-size: 15px;
+}
+
+}
+
+/*------------------------------------------------------------------------*/
+/*Blog Page Responsive CSS Starts*/
+/*------------------------------------------------------------------------*/
+
+
+/*// Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) and (max-width: 991.98px) { 
+	.top_header .top_header_left .address a {
+		font-size: 14px;
+	}
+	.top_header .top_header_left .phone a {
+		font-size: 14px;
+	}
+	.top_header .top_header_left .email a, i {
+		font-size: 14px;
+	}
+	.navbar-expand-lg .navbar-nav .nav-link {
+		padding-left: 0px;
+	}
+	.navbar-expand-lg .navbar-nav .nav-link:hover::after {
+		display: none;
+	}
+	.sym_header h3:after {
+		left: 43%;
+	}
+	.abt_con h4 {
+		padding-left: 0px;
+		padding-bottom: 0px;
+		font-size: 18px;
+	}
+	.abt_con h3 {
+		padding-bottom: 0px;
+		font-size: 20px;
+	}
+	.abt_con p {
+		font-size: 14px;
+	}
+	.sym_right {
+		padding-top: 100px;
+	}
+	.prevention {
+		padding: 0px;
+	}
+	.prevention .prevention_header h3:after {
+		left: 45%;
+ 	}
+	.do_bg {
+		margin-top: 50px;
+	}
+	.doc_title h3 {
+    	font-size: 24px;
+	}
+	.blog {
+    	padding: 0px 0px 50px 0px;
+	}
+	.post_paragraph {
+		padding-left: 5px;
+    	padding-bottom: 10px;
+	}
+	.post_paragraph h4 {
+		font-size: 20px;
+	}
+
+/*------------------------------------------------------------------------*/
+/*Blog Page Responsive CSS Starts*/
+/*------------------------------------------------------------------------*/
+
+.catagories ul li .virus {
+	margin-left: 46%;
+}
+.catagories ul li .treat {
+	margin-left: 49%;
+}
+.catagories ul li .symp {
+	margin-left: 49.3%;
+}
+
+.cata_tag {
+	float: left;
+	margin-top: 40px;
+}
+
+}
+
+
+/*------------------------------------------------------------------------*/
+/*Blog Page Responsive CSS Ends*/
+/*------------------------------------------------------------------------*/
+
+
+ 
+
+/*// Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) and (max-width: 767.98px) { 
+	.social_logo {
+		display: none;
+	}
+	.top_header .top_header_left .address a {
+		font-size: 13px;
+	}
+	.top_header .top_header_left .phone a {
+		font-size: 13px;
+	}
+	.top_header .top_header_left .email a, i {
+		font-size: 13px;
+	}
+	.top_header .top_header_left {
+		padding: 10px 0px;
+		margin-top: 0px;
+	}
+	.navbar-expand-lg .navbar-nav .nav-link {
+		padding-left: 0px;
+	}
+	.navbar-expand-lg .navbar-nav .nav-link:hover::after {
+		display: none;
+	}
+	.banner_overlay {
+		padding: 100px 0px 100px 0px;
+	}
+	.banner_content p {
+		padding: 5px 10px;
+		font-size: 12px;
+	}
+	.banner_content h3 {
+		font-size: 22px;
+	}
+	
+	.banner_content h1 {
+		padding-top: 5px;
+		font-size: 22px;
+	}
+	.banner_content h6 {
+		margin-right: 25%;
+		font-size: 13px;
+	}
+	.banner_content button {
+		font-size: 14px;
+		height: 35px;
+		width: 150px;
+	}
+	.abt_con h4 {
+		font-size: 18px;
+		padding-bottom: 0px;
+	}
+	.abt_con h3 {
+		font-size: 22px;
+		padding-bottom: 0px;
+	}
+	.abt_con p {
+		font-size: 14px;
+	}
+	.sym_header h3 {
+    	font-size: 24px;
+   	 	padding-bottom: 35px;
+	}
+	.symptoms {
+		padding: 0px;
+		padding-top: 20px;
+	}
+	.symptoms p {
+		font-size: 20px;
+	}
+	.sym_header h3:after {
+		left: 43%;
+	}
+	.prevention .prevention_header h3 {
+    	font-size: 24px;
+   	 	padding-bottom: 35px;
+	}
+	.do_bg h4 {
+		font-size: 20px;
+	}
+	.do_con h5 {
+		font-size: 16px;
+	}
+	.do_con p {
+		font-size: 14px;
+	}
+	.dont_con h5 {
+		font-size: 16px;
+	}
+	.dont_con p {
+		font-size: 14px;
+	}
+	.treatment .treatment_header h3 {
+		font-size: 24px;
+   	 	padding-bottom: 35px;
+	}
+	.doc_title h3 {
+		font-size: 20px;
+	}
+	.doc_title h6 {
+		font-size: 16px;
+	}
+	.blog .blog_header h3 {
+		font-size: 24px;
+   	 	padding-bottom: 35px;
+	}
+	.post_paragraph h4 {
+		font-size: 20px;
+	}
+	.contact .contact_header h3 {
+		font-size: 24px;
+   	 	padding-bottom: 35px;
+	}
+	.btn-link {
+		font-size: 16px;
+	}
+	.footer h4 {
+		font-size: 18px;
+	}
+	.footer_logo p {
+		font-size: 14px;
+		padding-bottom: 5px;
+	}
+	.footer_links a {
+		font-size: 14px;
+	}
+	.blog .blog_header h3:after {
+		left: 43%;
+	}
+	.prevention .prevention_header h3:after {
+		left: 44%;
+	}
+	.treatment .treatment_header h3:after {
+		left: 43%;
+	}
+	.sym_right {
+		display: none;
+	}
+	.do_bg {
+		margin-top: 30px;
+	}
+	.prevention {
+    	padding: 20px 0px 20px 0px;
+	}
+	.treatment {
+    	padding: 20px 0px 20px 0px;
+	}
+	.doctors {
+		text-align: center;
+		/*border-radius: 15px;*/
+	}
+	.doc_title {
+		width: 80%;
+    	margin-left: 51px;
+    	margin-bottom: 20px;
+	}
+	.doctors:hover .doc_overlay {
+	    width: 86%;
+    	left: 7%;
+    	border-radius: 0px;
+	}
+	.blog {
+    	padding: 20px 0px;
+	}
+	.post_con {
+		margin-bottom: 30px;
+	}
+	.contact .contact_header h3:after {
+		left: 42%;
+	}
+	.contact {
+    	padding: 20px 0px 50px 0px;
+	}
+	.footer {
+    	padding: 50px 0px 20px 0px;
+    }	
+    .footer_contact {
+    	padding-top: 30px;
+	}
+	.footer_links {
+    	padding-top: 32px;
+	}
+
+/*------------------------------------------------------------------------*/
+/*Blog Page Responsive CSS Starts*/
+/*------------------------------------------------------------------------*/
+.blog_page h3 {
+	font-size: 32px;
+}
+.blog_page ul li a {
+	font-size: 16px;
+}
+.blog_main_left_con h2 {
+	font-size: 22px;
+	margin-bottom: 10px;
+}
+.blog_main_left_con  {
+	font-size: 12px;
+}
+.pagination {
+	margin-top: 20px;
+}
+.catagories_con p {
+	padding-top: 55px;
+}
+.cata_tag a {
+	padding: 5px 5px;
+}
+.catagories ul li span {
+	margin-left: 47%;
+}
+.catagories ul li .virus {
+	margin-left: 40%;
+}
+.catagories ul li .treat {
+	margin-left: 44%;
+}
+.catagories ul li .symp {
+	margin-left: 44.5%;
+}
+
+
+}
+
+/*------------------------------------------------------------------------*/
+/*Blog Page Responsive CSS Ends*/
+/*------------------------------------------------------------------------*/
+
+
+ 
+
+
+/*// Extra small devices (portrait phones, less than 576px)*/
+@media (max-width: 575.98px) { 
+	.top_header {
+		display: none;
+	}
+	.navbar-expand-lg .navbar-nav .nav-link {
+		padding-left: 0px;
+	}
+	.navbar-expand-lg .navbar-nav .nav-link:hover::after {
+		display: none;
+	}
+	.banner_overlay {
+		padding: 100px 0px 100px 0px;
+	}
+	.banner_content p {
+		padding: 5px 10px;
+		font-size: 12px;
+	}
+	.banner_content h1 {
+		padding-top: 5px;
+		font-size: 26px;
+	}
+	.banner_content h6 {
+		margin-right: 25%;
+		font-size: 14px;
+	}
+	.banner_content button {
+		font-size: 14px;
+		height: 35px;
+		width: 150px;
+	}
+	.symptoms {
+		padding: 0px;
+		padding-top: 20px;
+	}
+	.sym_header h3 {
+    	font-size: 22px;
+	}
+	.sym_header h3:after {
+		display: none;
+	}
+	.prevention .prevention_header h3:after {
+		display: none;
+	}
+	.prevention .prevention_header h3 {
+		padding-bottom: 0px;
+	}
+	.treatment .treatment_header h3:after {
+		display: none;
+	}
+	.sym_right {
+		display: none;
+	}
+	.do_bg {
+		margin-top: 30px;
+	}
+	.do_con h5 {
+     	padding-top: 0px; 
+	}
+	.dont_con h5 {
+     	padding-top: 0px; 
+	}
+	.prevention {
+    	padding: 20px 0px 20px 0px;
+	}
+	.treatment {
+    	padding: 20px 0px 20px 0px;
+	}
+	.doctors {
+		text-align: center;
+	}
+	.doc_title {
+		width: 100%;
+    	margin-left: 0px;
+    	margin-bottom: 20px;
+	}
+	.doctors:hover .doc_overlay {
+	    width: 79%;
+	    left: 10.4%;
+	}
+	.doctors:hover img {
+		-webkit-transform: scale(1);
+		    -ms-transform: scale(1);
+		        transform: scale(1);
+	}
+	.blog {
+    	padding: 20px 0px;
+	}
+	.post_con {
+		margin-bottom: 30px;
+	}
+	.blog .blog_header h3:after {
+		display: none;
+	}
+	.btn-link {
+		font-size: 16px;
+	}
+	.contact .contact_header h3:after {
+		display: none;
+	}
+
+	.contact {
+    	padding: 20px 0px 50px 0px;
+	}
+	.footer {
+    	padding: 50px 0px 20px 0px;
+    }	 
+    .footer_contact {
+    	padding-top: 30px;
+	}
+	.footer_links {
+    	padding-top: 30px;
+	}
+	.footer_end p {
+		font-size: 12px;
+	}
+	.banner_content p {
+		padding: 5px 10px;
+		font-size: 12px;
+	}
+	.banner_content h3 {
+		font-size: 22px;
+	}
+	
+	.banner_content h1 {
+		padding-top: 5px;
+		font-size: 22px;
+	}
+	.banner_content h6 {
+		margin-right: 25%;
+		font-size: 13px;
+	}
+	.banner_content button {
+		font-size: 14px;
+		height: 35px;
+		width: 150px;
+	}
+	.abt_con h4 {
+		font-size: 18px;
+		padding-bottom: 0px;
+	}
+	.abt_con h3 {
+		font-size: 22px;
+		padding-bottom: 0px;
+	}
+	.abt_con p {
+		font-size: 14px;
+	}
+	.sym_header h3 {
+    	font-size: 24px;
+   	 	padding-bottom: 35px;
+	}
+	.symptoms {
+		padding: 0px;
+		padding-top: 20px;
+	}
+	.symptoms p {
+		font-size: 20px;
+	}
+	.sym_header h3:after {
+		left: 43%;
+	}
+	.prevention .prevention_header h3 {
+    	font-size: 24px;
+   	 	padding-bottom: 35px;
+	}
+	.do_bg h4 {
+		font-size: 20px;
+	}
+	.do_con h5 {
+		font-size: 16px;
+	}
+	.do_con p {
+		font-size: 14px;
+	}
+	.dont_con h5 {
+		font-size: 16px;
+	}
+	.dont_con p {
+		font-size: 14px;
+	}
+	.treatment .treatment_header h3 {
+		font-size: 24px;
+   	 	padding-bottom: 35px;
+	}
+	.doc_title h3 {
+		font-size: 20px;
+	}
+	.doc_title h6 {
+		font-size: 16px;
+	}
+	.blog .blog_header h3 {
+		font-size: 24px;
+   	 	padding-bottom: 35px;
+	}
+	.post_paragraph h4 {
+		font-size: 20px;
+	}
+	.contact .contact_header h3 {
+		font-size: 24px;
+   	 	padding-bottom: 35px;
+	}
+	.btn-link {
+		font-size: 16px;
+	}
+	.footer h4 {
+		font-size: 18px;
+	}
+	.footer_logo p {
+		font-size: 14px;
+		padding-bottom: 5px;
+	}
+	.footer_links a {
+		font-size: 14px;
+	}
+	.footer_contact a {
+		font-size: 12px;
+	}
+	.footer_end {
+		margin-top: 0px;
+	}
+
+
+
+/*------------------------------------------------------------------------*/
+/*Blog Page Responsive CSS Starts*/
+/*------------------------------------------------------------------------*/
+.blog_page h3 {
+	font-size: 28px;
+}
+.blog_page ul li a {
+	font-size: 16px;
+}
+.blog_main {
+	padding: 0px;
+	padding-bottom: 30px;
+}
+.pagination {
+    margin-top: 25px;
+}
+.catagories_con p {
+	padding-top: 27px;
+}
+.blog_main_left_con h2 {
+	font-size: 18px;
+}
+.cata_tag a {
+	padding: 5px 3px;
+}
+.catagories ul li span {
+	margin-left: 47%;
+}
+.catagories ul li .virus {
+	margin-left: 40%;
+}
+.catagories ul li .treat {
+	margin-left: 44%;
+}
+.catagories ul li .symp {
+	margin-left: 44.5%;
+}
+
+
+/*------------------------------------------------------------------------*/
+/*Blog Page Responsive CSS Ends*/
+/*------------------------------------------------------------------------*/
+
+}
+
+
+/*------------------------------------------------------------------------*/
+/*Responsive CSS Ends*/
+/*------------------------------------------------------------------------*/
